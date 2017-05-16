@@ -20,9 +20,11 @@ Módulo Multiplicación. Este módulo permite realizar la operación de multipli
 
 ## Documentación
 
-[Documentación del Modulo Multiplicacion]()
+[Documentación del Modulo Multiplicacion](https://ull-esit-dsi-1617.github.io/proyecto-dsi-edna-joseluis-kevin-35l2v3-1-operation-multiplicacion/)
 
 ## Travis
+
+[![BuildStatus](https://travis-ci.org/ULL-ESIT-DSI-1617/proyecto-dsi-edna-joseluis-kevin-35l2v3-1-operation-multiplicacion.svg?branch=master)](https://travis-ci.org/ULL-ESIT-DSI-1617/proyecto-dsi-edna-joseluis-kevin-35l2v3-1-operation-multiplicacion)
 
 
 ## Asignatura DSI ULL
