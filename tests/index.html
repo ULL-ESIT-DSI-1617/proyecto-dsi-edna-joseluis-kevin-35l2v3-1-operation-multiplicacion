@@ -8,11 +8,8 @@
   </head>
   <body>
     <div id="mocha"></div>
-
-	<input id="original">
-	<span class="output" id="operated"></span>
-
-    <script>mocha.setup('tdd');</script>
+    <script src="mocha.js"></script>
+    <script>mocha.setup('bdd');</script>
     <script src="tests.js"></script>
     <script>
       mocha.run();

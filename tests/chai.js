@@ -11,7 +11,7 @@ module.exports = require('./lib/chai');
 var used = [];
 
 /*!
- * Chai version
+ * Chai versionq
  */
 
 exports.version = require('../package').version;
@@ -510,7 +510,7 @@ module.exports = function (chai, _) {
    *     Object.prototype.b = 2;
    *
    *     expect({a: 1}).to.have.own.property('a');
-   *     expect({a: 1}).to.have.property('b').but.not.own.property('b'); 
+   *     expect({a: 1}).to.have.property('b').but.not.own.property('b');
    *
    *     expect({a: 1}).to.own.include({a: 1});
    *     expect({a: 1}).to.include({b: 2}).but.not.own.include({b: 2});
@@ -643,7 +643,7 @@ module.exports = function (chai, _) {
    *     expect(1, 'nooo why fail??').to.be.a('string');
    *
    * `.a` can also be used as a language chain to improve the readability of
-   * your assertions. 
+   * your assertions.
    *
    *     expect({b: 2}).to.have.a.property('b');
    *
@@ -747,7 +747,7 @@ module.exports = function (chai, _) {
    *
    *     expect('foobar').to.not.include('taco');
    *     expect([1, 2, 3]).to.not.include(4);
-   * 
+   *
    * However, it's dangerous to negate `.include` when the target is an object.
    * The problem is that it creates uncertain expectations by asserting that the
    * target object doesn't have all of `val`'s key/value pairs but may or may
@@ -1267,7 +1267,7 @@ module.exports = function (chai, _) {
    *
    *     expect(1).to.equal(1);
    *     expect('foo').to.equal('foo');
-   * 
+   *
    * Add `.deep` earlier in the chain to use deep equality instead. See the
    * `deep-eql` project page for info on the deep equality algorithm:
    * https://github.com/chaijs/deep-eql.
@@ -1917,7 +1917,7 @@ module.exports = function (chai, _) {
    *
    *     expect({a: 1}).to.have.own.property('a');
    *     expect({a: 1}).to.have.own.property('a', 1);
-   *     expect({a: 1}).to.have.property('b').but.not.own.property('b'); 
+   *     expect({a: 1}).to.have.property('b').but.not.own.property('b');
    *
    * `.deep` and `.own` can be combined.
    *
@@ -1944,7 +1944,7 @@ module.exports = function (chai, _) {
    * Add `.not` earlier in the chain to negate `.property`.
    *
    *     expect({a: 1}).to.not.have.property('b');
-   * 
+   *
    * However, it's dangerous to negate `.property` when providing `val`. The
    * problem is that it creates uncertain expectations by asserting that the
    * target either doesn't have a property with the given key `name`, or that it
@@ -1982,7 +1982,7 @@ module.exports = function (chai, _) {
    *
    *     // Not recommended
    *     expect({a: 1}).to.have.property('b', undefined, 'nooo why fail??');
-   * 
+   *
    * The above assertion isn't the same thing as not providing `val`. Instead,
    * it's asserting that the target object has a `b` property that's equal to
    * `undefined`.
@@ -2092,7 +2092,7 @@ module.exports = function (chai, _) {
    * Add `.not` earlier in the chain to negate `.ownPropertyDescriptor`.
    *
    *     expect({a: 1}).to.not.have.ownPropertyDescriptor('b');
-   * 
+   *
    * However, it's dangerous to negate `.ownPropertyDescriptor` when providing
    * a `descriptor`. The problem is that it creates uncertain expectations by
    * asserting that the target either doesn't have a property descriptor with
@@ -2163,7 +2163,7 @@ module.exports = function (chai, _) {
    *       writable: true,
    *       value: 2,
    *     });
-   * 
+   *
    *     // Recommended
    *     expect({a: 1}, 'nooo why fail??').to.have.ownPropertyDescriptor('b');
    *
@@ -2380,7 +2380,7 @@ module.exports = function (chai, _) {
    * ### .keys(key1[, key2[, ...]])
    *
    * Asserts that the target object, array, map, or set has the given keys. Only
-   * the target's own inherited properties are included in the search. 
+   * the target's own inherited properties are included in the search.
    *
    * When the target is an object or array, keys can be provided as one or more
    * string arguments, a single array argument, or a single object argument. In
@@ -2615,7 +2615,7 @@ module.exports = function (chai, _) {
    *
    * When no arguments are provided, `.throw` invokes the target function and
    * asserts that an error is thrown.
-   * 
+   *
    *     var badFn = function () { throw new TypeError('Illegal salmon!'); };
    *
    *     expect(badFn).to.throw();
@@ -2667,11 +2667,11 @@ module.exports = function (chai, _) {
    *     expect(badFn).to.throw(err, /salmon/);
    *
    * Add `.not` earlier in the chain to negate `.throw`.
-   *     
+   *
    *     var goodFn = function () {};
    *
    *     expect(goodFn).to.not.throw();
-   * 
+   *
    * However, it's dangerous to negate `.throw` when providing any arguments.
    * The problem is that it creates uncertain expectations by asserting that the
    * target either doesn't throw an error, or that it throws an error but of a
@@ -3019,7 +3019,7 @@ module.exports = function (chai, _) {
    * first argument, and asserts that the value returned is truthy.
    *
    *     expect(1).to.satisfy(function(num) {
-   *       return num > 0; 
+   *       return num > 0;
    *     });
    *
    * Add `.not` earlier in the chain to negate `.satisfy`.
@@ -3488,7 +3488,7 @@ module.exports = function (chai, _) {
    *
    *     expect(subtractTwo).to.decrease(myObj, 'val').by(2); // Recommended
    *     expect(subtractTwo).to.not.increase(myObj, 'val'); // Not recommended
-   * 
+   *
    * When the subject is expected to stay the same, it's often best to assert
    * exactly that.
    *
@@ -3585,7 +3585,7 @@ module.exports = function (chai, _) {
    *
    * When two arguments are provided, `.decrease` asserts that the value of the
    * given object `subject`'s `prop` property is lesser after invoking the
-   * target function compared to beforehand. 
+   * target function compared to beforehand.
    *
    *     var myObj = {val: 1}
    *       , subtractTwo = function () { myObj.val -= 2; };
@@ -3607,7 +3607,7 @@ module.exports = function (chai, _) {
    *
    *     expect(addTwo).to.increase(myObj, 'val').by(2); // Recommended
    *     expect(addTwo).to.not.decrease(myObj, 'val'); // Not recommended
-   * 
+   *
    * When the subject is expected to stay the same, it's often best to assert
    * exactly that.
    *
@@ -7494,7 +7494,7 @@ var inspect = require('./inspect');
  *
  * @param {Mixed} first element to compare
  * @param {Mixed} second element to compare
- * @returns {Number} -1 if 'a' should come before 'b'; otherwise 1 
+ * @returns {Number} -1 if 'a' should come before 'b'; otherwise 1
  * @name compareByInspect
  * @namespace Utils
  * @api public
@@ -8402,7 +8402,7 @@ var config = require('../config');
  */
 
 module.exports = function isProxyEnabled() {
-  return config.useProxy && 
+  return config.useProxy &&
     typeof Proxy !== 'undefined' &&
     typeof Reflect !== 'undefined';
 };
@@ -8739,7 +8739,7 @@ var isProxyEnabled = require('./isProxyEnabled');
  * the list of existing properties. However, if a nonChainableMethodName is
  * provided, then the root cause is instead a failure to invoke a non-chainable
  * method prior to reading the non-existent property.
- * 
+ *
  * If proxies are unsupported or disabled via the user's Chai config, then
  * return object without modification.
  *
