@@ -23,3 +23,5 @@ gulp.task("doc", shell.task("npm run doc"));
 //     configFile: __dirname + '/karma.conf.js'
 //     }, done).start();
 // });
+
+gulp.task('test', shell.task('./node_modules/karma/bin/karma start --single-run --browsers Chrome,Firefox'));
