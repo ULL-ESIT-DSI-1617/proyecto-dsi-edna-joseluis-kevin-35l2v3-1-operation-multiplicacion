@@ -1,14 +1,10 @@
 {
   "name": "@ull-edna-joseluis-kevin-35l2/ull-operation-multiplicacion",
-<<<<<<< HEAD
-  "version": "1.0.1",
-=======
   "version": "1.0.2",
->>>>>>> 55d66870a675e1abce8ce326a164bf0a4bbd97ab
   "description": "Módulo Multiplicacion",
-  "main": "index.js",
+  "main": "multiplicacion.js",
   "scripts": {
-    "doc": "documentation build index.js -f html -o docs",
+    "doc": "documentation build multiplicacion.js -f html -o docs",
     "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
@@ -33,7 +29,7 @@
   },
   "homepage": "https://github.com/ULL-ESIT-DSI-1617/proyecto-dsi-edna-joseluis-kevin-35l2v3-1-operation-multiplicacion#readme",
   "dependencies": {
-    "@ull-edna-joseluis-kevin-35l2/ull-operation": "^1.0.3"
+    "@ull-edna-joseluis-kevin-35l2/ull-operation": "^2.0.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
