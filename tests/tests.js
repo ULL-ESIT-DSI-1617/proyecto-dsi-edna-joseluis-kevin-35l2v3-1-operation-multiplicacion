@@ -5,8 +5,7 @@ suite('operation-resta', function() {
 		 if (typeof __html__ !== 'undefined') {
 			 document.body.innerHTML = __html__['tests/index.html'];
 			 original = document.getElementById('original');
--			operated = document.getElementById('converted');
-+			operated = document.getElementById('operated');
+			 operated = document.getElementById('operated');
 		 }
 	 });
 
@@ -16,9 +15,9 @@ suite('operation-resta', function() {
 	 assert.equal(operated, 6);
  });
 
- test('5*5', function() {
-	 original.value = '5*5';
-	 main();
-	 assert.equal(operated, 25);
- });
+ // test('5*5', function() {
+ //  original.value = '5*5';
+ //  main();
+ //  assert.equal(operated, 25);
+ // });
 });
