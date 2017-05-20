@@ -1,6 +1,10 @@
 {
   "name": "@ull-edna-joseluis-kevin-35l2/ull-operation-multiplicacion",
+<<<<<<< HEAD
   "version": "1.0.1",
+=======
+  "version": "1.0.2",
+>>>>>>> 55d66870a675e1abce8ce326a164bf0a4bbd97ab
   "description": "Módulo Multiplicacion",
   "main": "index.js",
   "scripts": {
