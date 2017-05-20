@@ -9,7 +9,7 @@
   * @param {number} dch Operando derecho
   */
 
-    operations['*'] = class Multiplicacion extends Operation {
+    operations['x'] = class Multiplicacion extends Operation {
       /**
   		* Constructor de la Multiplicacion
   		* @param {number} izq Operando izquierdo
@@ -29,9 +29,9 @@
     }
 
   if(operations.symbols){
-    operations.symbols += '*';
+    operations.symbols += 'x';
   }else{
-    operations.symbols = '*';
+    operations.symbols = 'x';
   }
 // }(global.operations = global.operations || {}));
  }(operations = operations || {}));

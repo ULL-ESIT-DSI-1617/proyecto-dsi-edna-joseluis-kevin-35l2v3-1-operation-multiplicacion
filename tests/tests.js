@@ -9,15 +9,9 @@ suite('operation-resta', function() {
 		 }
 	 });
 
- test('2*3', function() {
-	 original.value = '2*3';
+ test('2x3', function() {
+	 original.value = '2x3';
 	 main();
 	 assert.equal(operated, 6);
  });
-
- // test('5*5', function() {
- //  original.value = '5*5';
- //  main();
- //  assert.equal(operated, 25);
- // });
 });
